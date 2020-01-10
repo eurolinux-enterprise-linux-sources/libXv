@@ -5,7 +5,7 @@
 Summary: X.Org X11 libXv runtime library
 Name:    libXv
 Version: 1.0.9
-Release: 1%{?gitdate:.%{gitdate}git%{gitversion}}%{?dist}
+Release: 2.1%{?gitdate:.%{gitdate}git%{gitversion}}%{?dist}
 License: MIT
 Group: System Environment/Libraries
 URL: http://www.x.org
@@ -74,6 +74,12 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man3/*.3*
 
 %changelog
+* Wed Feb 12 2014 Adam Jackson <ajax@redhat.com> 1.0.9-2.1
+- Mass rebuild
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.0.9-2
+- Mass rebuild 2013-12-27
+
 * Wed Jun 26 2013 Peter Hutterer <peter.hutterer@redhat.com> 1.0.9-1
 - libXv 1.0.9
 
