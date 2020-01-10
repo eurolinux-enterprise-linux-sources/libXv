@@ -4,7 +4,7 @@
 
 Summary: X.Org X11 libXv runtime library
 Name:    libXv
-Version: 1.0.11
+Version: 1.0.9
 Release: 1%{?gitdate:.%{gitdate}git%{gitversion}}%{?dist}
 License: MIT
 Group: System Environment/Libraries
@@ -74,28 +74,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man3/*.3*
 
 %changelog
-* Mon Jan 23 2017 Benjamin Tissoires <benjamin.tissoires@redhat.com> 1.0.11-1
-- libXv 1.0.11
-- fixes CVE-2016-5407
-
-* Thu Feb 04 2016 Fedora Release Engineering <releng@fedoraproject.org> - 1.0.10-4
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild
-
-* Wed Jun 17 2015 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.10-3
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_23_Mass_Rebuild
-
-* Sun Aug 17 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.10-2
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_22_Mass_Rebuild
-
-* Thu Jul 24 2014 Benjamin Tissoires <benjamin.tissoires@redhat.com> 1.0.10-1
-- libXv 1.0.10
-
-* Sat Jun 07 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.9-3
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_Mass_Rebuild
-
-* Sat Aug 03 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.9-2
-- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
-
 * Wed Jun 26 2013 Peter Hutterer <peter.hutterer@redhat.com> 1.0.9-1
 - libXv 1.0.9
 
